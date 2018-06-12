@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+
+}
+.header_image {
+    width: 100%;
+    z-index: 2;
+}
+.header_text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    line-height: 5vw;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 15vw;
+    /* padding-bottom: 4em; */
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: white;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .8))), no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 100%), no-repeat;
+}
+#menu_bar {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #23b2a4;
+    color: white;
+    -webkit-box-shadow: inset 0px 12px 20px -10px rgba(0, 0, 0, .75);
+            box-shadow: inset 0px 12px 20px -10px rgba(0, 0, 0, .75)
+
+}
+#menu_bar p {
+    padding: 10px;
+}
+#menu_bar.fixed {
+    position:fixed;
+    top:0;
+    bottom: unset;
+    width: 100%;
+}
+#menu_bar a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    cursor: pointer;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+}
+#menu_bar a:hover {
+    background-color: #219c90;
+    -webkit-box-shadow: inset 0px 12px 20px -10px rgba(0, 0, 0, .75);
+            box-shadow: inset 0px 12px 20px -10px rgba(0, 0, 0, .75);
+}
+.indicator{
+    width: 0;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all
+}
+.indicator.active {
+    width: 100%;
+}
+#app-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 35px;
+    background-color: #dbe4e3
+}
+#app-container a {
+    cursor: pointer;
+}
+#app-container .card {
+    height: 400px;
+    width: 300px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    background-color: #ECECEC;
+}
+#app-container .card:hover {
+    -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
+}
+#app-container .card .header {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+#app-container .card .header .title {
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+    max-height: 25px;
+    width: -webkit-stretch;
+    text-align: justify;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#app-container .card .header .subtitle {
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-size: 0.9em;
+    max-height: 25px;
+    width: -webkit-stretch;
+    color: rgba(0, 0, 0, .54);
+    text-decoration: none;
+    text-align: justify;
+}
+#app-container .card img {
+    width: 100%;
+    height: 150px;
+}
+#app-container .card .short_text {
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1em;
+    padding:10px;
+}
+#app-container {
+    footer {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    }
+}

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Julien Bonnanfant</title>
+    <meta name="description" content="Site web de julien bonnanfant" />
+    <link rel="stylesheet" href="./dest/style.css">
+    <script src="./src/menu.js" ></script>
+
+    <link rel="shortcut icon" href="./src/img/favicon.ico">
+</head>
+
+<body onscroll="setMenuPosition()">
+
+
+    <header class="header">
+        <img src="./src/img/imageheader.jpg" alt="Image d'illustration de la page" class="header_image">
+        <h1 class="header_text">Julien Bonnanfant</h1>
+        <div id="menu_bar" action="#">
+            <a onclick= "gotopage('home')">
+                <p>Accueil </p>
+                <div class="indicator home"></div>
+            </a>
+
+            <a onclick= "gotopage('articles')">
+                <p>Articles</p>
+                <div class="indicator articles"></div>
+            </a>
+
+            <a onclick= "gotopage('projets')">
+                <p>Projets </p>
+                <div class="indicator projets"></div>
+            </a>
+
+            <a onclick= "gotopage('competences')">
+                <p>Competences</p>
+                <div class="indicator competences"></div>
+            </a>
+
+            <a onclick= "gotopage('contact')" >
+                <p>Contact</p>
+                <div class="indicator contact"></div>
+            </a>
+        </div>
+
+    </header>
+
+
+
+
+    <div id="app-container">
+
+</div>
+
+
+
+
+<footer src="" alt="footer" >
+    <p> JulienBonnanfant 2018 </p>
+</footer>
+<script src="./src/app.js" ></script>
+</body>
+</html>
