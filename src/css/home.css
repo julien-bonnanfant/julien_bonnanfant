@@ -1,0 +1,22 @@
+.about_container{
+
+
+    & .experiences{
+
+    }
+    & .about_me{
+
+    }
+    & .competence{
+
+    }
+}
+.articles_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+}

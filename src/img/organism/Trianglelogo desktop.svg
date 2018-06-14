@@ -5,12 +5,20 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="organism/Trianglelogo-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Trianglelogo" transform="translate(720.000000, 26.000000) scale(-1, 1) translate(-720.000000, -26.000000) " fill="#80CBC4">
+        <g id="Trianglelogo" transform="translate(720.000000, 26.000000) scale(-1, 1) translate(-720.000000, -26.000000) " fill="#26A69A">
             <rect id="BG" transform="translate(720.000000, 26.000000) scale(-1, 1) translate(-720.000000, -26.000000) " x="0" y="0" width="1440" height="52"></rect>
         </g>
-        <path d="M720,0 C720,0 720,2.85 720,8.55" id="Line" stroke="#F7F7F7" stroke-linecap="square"></path>
-        <path d="M720,43.5 L720,51.5" id="Line" stroke="#F7F7F7" stroke-linecap="square"></path>
-        <polygon id="Triangle" stroke="#F7F7F7" transform="translate(720.000000, 22.500000) scale(1, -1) translate(-720.000000, -22.500000) " points="720 9 750 36 690 36"></polygon>
-        <path d="M739.867572,18 C743.070576,18 746.448052,18 750,18 L719.96795,44 L690,18 L699.871886,18" id="Path-2" stroke="#F7F7F7"></path>
+        <g id="Group" transform="translate(1080.000000, 0.000000)" stroke="#F7F7F7">
+            <path d="M30,0 C30,0 30,2.85 30,8.55" id="Line" stroke-linecap="square"></path>
+            <path d="M30,43.5 L30,51.5" id="Line" stroke-linecap="square"></path>
+            <polygon id="Triangle" transform="translate(30.000000, 22.500000) scale(1, -1) translate(-30.000000, -22.500000) " points="30 9 60 36 0 36"></polygon>
+            <path d="M49.867572,18 C53.0705764,18 56.4480524,18 60,18 L29.9679503,44 L0,18 L9.87188602,18" id="Path-2"></path>
+        </g>
+        <g id="Group-2" transform="translate(300.000000, 0.000000)" stroke="#F7F7F7">
+            <path d="M30,0 C30,0 30,2.85 30,8.55" id="Line-Copy-2" stroke-linecap="square"></path>
+            <path d="M30,43.5 L30,51.5" id="Line-Copy" stroke-linecap="square"></path>
+            <polygon id="Triangle-Copy" transform="translate(30.000000, 22.500000) scale(1, -1) translate(-30.000000, -22.500000) " points="30 9 60 36 0 36"></polygon>
+            <path d="M49.867572,18 C53.0705764,18 56.4480524,18 60,18 L29.9679503,44 L0,18 L9.87188602,18" id="Path-2-Copy"></path>
+        </g>
     </g>
 </svg>

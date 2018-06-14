@@ -1,5 +1,5 @@
 var watch = require("gulp-watch");
-
+var concatCss = require('gulp-concat-css');
 var gulp = require("gulp");
 var postcss = require("gulp-postcss");
 
@@ -20,7 +20,8 @@ gulp.task("css", function() {
                 require("postcss-reporter")()
             ])
         )
-        .pipe(gulp.dest("./dest"));
+        .pipe(concatCss("style.css"))
+        .pipe(gulp.dest('dest/'));
 
 });
 gulp.task("watch",function() {
