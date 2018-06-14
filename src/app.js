@@ -7,7 +7,7 @@ else{
 
 function gotopage(page){
     var xhr= new XMLHttpRequest();
-    xhr.open('GET', page+'.html', true);
+    xhr.open('GET', './src/pages/'+page+'.html', true);
     xhr.onreadystatechange= function() {
         if (this.readyState!==4) return;
         if (this.status!==200) return; // or whatever error handling you want
