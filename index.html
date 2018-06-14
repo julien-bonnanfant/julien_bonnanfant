@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Julien Bonnanfant</title>
-    <meta name="description" content="Site web de julien bonnanfant" />
+    <meta name="description" content="Site web de julien bonnanfant, Etudiant en informatique" />
     <link rel="stylesheet" href="./dest/style.css">
     <script src="./src/menu.js" ></script>
 
@@ -15,9 +15,27 @@
 
 
     <header class="header">
+
         <img src="./src/img/Header/headerpret.png" alt="Image d'illustration de la page" class="header_image">
+
         <h1 class="header_text">Julien Bonnanfant</h1>
-        <div id="menu_bar" action="#">
+
+        <div class="share-buttons-container">
+            <a target="_blank"href="https://twitter.com/iXiryuuss" >
+                <img src="./src/img/share/twitter.svg" alt="Bouton de follow pour twitter">
+            </a>
+            <a target="_blank"href="https://www.linkedin.com/in/julien-bonnanfant/">
+                <img src="./src/img/share/linkedin-in.svg" alt="Bouton de follow pour linkedin">
+            </a>
+            <a target="_blank"href="https://github.com/julien-bonnanfant">
+                <img src="./src/img/share/github.svg" alt="Bouton de follow pour github">
+            </a>
+            <a target="_blank"href="https://www.facebook.com/bonnanfant">
+                <img src="./src/img/share/facebook.svg" alt="Bouton de follow pour facebook">
+            </a>
+        </div>
+
+        <nav id="menu_bar" action="#">
             <a onclick= "gotopage('home')">
                 <div class="button">
                     <img src=./src/img/menu/home.svg alt="image d'illstration du bouton home" class="img_menu">
@@ -32,50 +50,51 @@
                     <img src=./src/img/menu/article.svg alt="image d'illstration du bouton home" class="img_menu">
                     <p>Articles</p>
                 </div>
-                    <div class="indicator articles"></div>
-                </a>
+                <div class="indicator articles"></div>
+            </a>
 
-                <a onclick= "gotopage('projets')">
-                    <div class="button">
-                        <img src=./src/img/menu/projet.svg alt="image d'illstration du bouton home" class="img_menu">
-                        <p>Projets </p>
-                    </div>
-                    <div class="indicator projets"></div>
-                </a>
+            <a onclick= "gotopage('projets')">
+                <div class="button">
+                    <img src=./src/img/menu/projet.svg alt="image d'illstration du bouton home" class="img_menu">
+                    <p>Projets </p>
+                </div>
+                <div class="indicator projets"></div>
+            </a>
 
-                <a onclick= "gotopage('competences')">
-                    <div class="button">
-                        <img src=./src/img/menu/competence.svg alt="image d'illstration du bouton home" class="img_menu">
-                        <p>Competences</p>
-                    </div>
-                    <div class="indicator competences"></div>
-                </a>
+            <a onclick= "gotopage('competences')">
+                <div class="button">
+                    <img src=./src/img/menu/competence.svg alt="image d'illstration du bouton home" class="img_menu">
+                    <p>Competences</p>
+                </div>
+                <div class="indicator competences"></div>
+            </a>
 
-                <a onclick= "gotopage('contact')" >
-                    <div class="button">
-                        <img src=./src/img/menu/id-card.svg alt="image d'illstration du bouton home" class="img_menu">
-                        <p>Contact</p>
-                    </div>
-                    <div class="indicator contact"></div>
+            <a onclick= "gotopage('contact')" >
+                <div class="button">
+                    <img src=./src/img/menu/id-card.svg alt="image d'illstration du bouton home" class="img_menu">
+                    <p>Contact</p>
+                </div>
+                <div class="indicator contact"></div>
 
-                </a>
-            </div>
-
-        </header>
+            </a>
+        </nav>
 
 
-
-
-        <div id="app-container">
-
-        </div>
+    </header>
 
 
 
 
-        <footer src="" alt="footer" >
-            <p> JulienBonnanfant 2018 </p>
-        </footer>
-        <script src="./src/app.js" ></script>
-    </body>
-    </html>
+    <div id="app-container">
+
+    </div>
+
+
+
+
+    <footer src="" alt="footer" >
+        <p> JulienBonnanfant 2018 </p>
+    </footer>
+    <script src="./src/app.js" ></script>
+</body>
+</html>
