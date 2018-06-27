@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="52px" viewBox="0 0 1440 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>go Up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD/-Home" transform="translate(0.000000, -2240.000000)">
+            <g id="go-Up" transform="translate(720.000000, 2266.000000) scale(1, -1) translate(-720.000000, -2266.000000) translate(0.000000, 2240.000000)">
+                <g id="organism/Trianglelogo-desktop">
+                    <rect id="BG" fill="#26A69A" fill-rule="evenodd" x="0" y="0" width="1440" height="52"></rect>
+                    <path d="M1110,0 C1110,0 1110,2.85 1110,8.55" id="Line" stroke="#F7F7F7" stroke-width="1" stroke-linecap="square"></path>
+                    <path d="M1110,43.5 L1110,51.5" id="Line" stroke="#F7F7F7" stroke-width="1" stroke-linecap="square"></path>
+                    <polygon id="Triangle" stroke="#F7F7F7" stroke-width="1" transform="translate(1110.000000, 22.500000) scale(1, -1) translate(-1110.000000, -22.500000) " points="1110 9 1140 36 1080 36"></polygon>
+                    <path d="M1129.86757,18 C1133.07058,18 1136.44805,18 1140,18 L1109.96795,44 L1080,18 L1089.87189,18" id="Path-2" stroke="#F7F7F7" stroke-width="1"></path>
+                    <path d="M330,0 C330,0 330,2.85 330,8.55" id="Line-Copy-2" stroke="#F7F7F7" stroke-width="1" stroke-linecap="square"></path>
+                    <path d="M330,43.5 L330,51.5" id="Line-Copy" stroke="#F7F7F7" stroke-width="1" stroke-linecap="square"></path>
+                    <polygon id="Triangle-Copy" stroke="#F7F7F7" stroke-width="1" transform="translate(330.000000, 22.500000) scale(1, -1) translate(-330.000000, -22.500000) " points="330 9 360 36 300 36"></polygon>
+                    <path d="M349.867572,18 C353.070576,18 356.448052,18 360,18 L329.96795,44 L300,18 L309.871886,18" id="Path-2-Copy" stroke="#F7F7F7" stroke-width="1"></path>
+                </g>
+                <text id="Haut-de-page" transform="translate(720.000000, 28.000000) scale(1, -1) translate(-720.000000, -28.000000) " font-family="Roboto-Regular, Roboto" font-size="36" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="612" y="42">Haut de page</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

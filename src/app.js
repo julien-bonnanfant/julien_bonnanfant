@@ -25,3 +25,19 @@ function setActivemenu(page){
 }
     document.getElementsByClassName(page)[0].classList.add("active");
 }
+
+
+
+function scrolltop(){
+    let scrollposition = document.documentElement.scrollTop
+
+    let timetorefresh = 16; //(for 60htz)
+    let animationtime = 100;
+    let numberofanimation = animationtime/timetorefresh;
+
+    window.scrollTo(scrollposition - ( scrollposition  /numberofanimation ),scrollposition - ( scrollposition  /numberofanimation ));
+
+    setTimeout(function () {
+        if(scrollposition !=0) scrolltop()
+    }, timetorefresh);
+}

@@ -130,7 +130,7 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 35px;
+
     background-color: #dbe4e3;
     & a{
         cursor: pointer;
@@ -143,6 +143,7 @@ header {
 
 
     & .card{
+
         height: 400px;
         width: 300px;
         margin: 15px;
@@ -201,14 +202,22 @@ header {
         }
 
 
+    }
 }
 .trianglelogo{
     min-width: 100%;
 }
+ .hautdelapage{
 
-
-footer{
-    background-color: black;
     width: 100%;
     height: 50px;
+    background-image: url("../src/img/go-up.svg");
+    background-size: cover;
+    background-position: center;
+
+}
+@media screen and (min-width : 1400px){
+    & .hautdelapage {
+        background-size: contain;
+    }
 }
