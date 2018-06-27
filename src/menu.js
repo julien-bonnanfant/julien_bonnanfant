@@ -6,8 +6,12 @@
      let fixedPoint =  headerHeight - heightmenu_bar
      if (document.documentElement.scrollTop >=fixedPoint) {
          document.getElementById('menu_bar').classList.add("fixed");
+         document.querySelector('.hautdelapage').style.display = 'block';
+
      }
      if (document.documentElement.scrollTop <= fixedPoint) {
          document.getElementById('menu_bar').classList.remove("fixed");
+         document.querySelector('.hautdelapage').style.display = 'none';
+
      }
  }

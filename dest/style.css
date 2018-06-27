@@ -1,3 +1,54 @@
+#contact_container {
+  width: 100%;
+  background-image: url("../src/img/Header/contact.jpg");
+}
+
+#contact_container form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#contact_container form .all_input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#contact_container form .all_input_container .right_input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+
+
+#contact_container form .all_input_container .input_containers {
+  color: white;
+  width: 470px;
+  height: 80px;
+  background-color: rgba(38, 166, 154, .45);
+  margin: 13px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+
 #home_container {
   width: 100%;
 }

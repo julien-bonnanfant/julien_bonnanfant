@@ -15,6 +15,8 @@ function gotopage(page){
         window.history.pushState(page,'','#'+page)
         setActivemenu(page)
 
+            show_hide_scrolltop();
+
     };
     xhr.send();
 }
