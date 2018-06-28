@@ -1,6 +1,11 @@
 #contact_container{
     width: 100%;
     background-image:url("../src/img/Header/contact.jpg");
+    display: flex;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -275px;
     & form{
         display: inline-flex;
         flex-direction: column;
@@ -10,6 +15,7 @@
         & .all_input_container{
             display:flex;
             flex-direction: row;
+            margin-top: 40px;
             & .right_input_container{
                 display: flex;
                 flex-direction: column;
@@ -19,20 +25,116 @@
 
             }
 
+
+
             & .input_containers{
                 color: white;
                 width: 470px;
-                height: 80px;
+                height: 70px;
                 background-color: rgba(38, 166, 154, 0.45);
                 margin: 13px;
                 padding: 20px;
                 border-radius: 4px;
+                & .input_text{
+                    font-family: sans-serif;
+                    margin-bottom: 10px;
+                }
 
+
+                & input {
+                    width: calc( 100% - 20px);
+                    height: 50px;
+                    outline: none;
+                    border-radius: 3px;
+                    border: none;
+                    padding: 0 10px;
+                    font-size: 20px;
+
+                    transition: .4s background-color;
+
+
+                    &::placeholder{
+                        color:rgba(255, 255, 255, 0.85);
+                    }
+
+                    &:not(:placeholder-shown){
+                        background-color: white;
+                    }
+                    &:placeholder-shown{
+                        background-color: rgba(255, 255, 255, 0.26);
+                        color: white;
+
+                    }
+                    &:focus{
+                        border-bottom : 3px solid #007d82;
+                        background-color: white !important;
+                    }
+                }
             }
         }
         & button{
 
-
+            height: 40px;
+            width: 221px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(225deg, #279076 0%, #2ECEC5 100%);
+            border: none;
+            cursor: pointer;
+            color: white;
+            margin: 50px 0px;
         }
+
+
     }
+    & .input_containers_message{
+        color: white;
+        width: 470px;
+        height: 478px;
+        background-color: rgba(38, 166, 154, 0.45);
+        margin: 13px;
+        padding: 20px;
+        border-radius: 4px;
+        & .input_text{
+            font-family: sans-serif;
+            margin-bottom: 10px;
+        }
+        & textarea {
+
+               width: calc( 100% - 20px);
+               height: calc(100% - 20px);
+               outline: none;
+               border-radius: 3px;
+               border: none;
+               padding: 0 10px;
+               font-size: 20px;
+               color: black;
+
+               transition: .4s background-color;
+
+
+               &:placeholder-shown{
+                   background-color: rgba(255, 255, 255, 0.26);
+                   color: white;
+
+               }
+
+               &::placeholder{
+                   color:rgba(255, 255, 255, 0.85);
+               }
+
+               &:not(:placeholder-shown){
+                   background-color: white;
+               }
+
+               &:focus{
+                   border-bottom : 3px solid #007d82;
+                   background-color: white !important;
+               }
+
+       }
+
+
+
+    }
+
 }

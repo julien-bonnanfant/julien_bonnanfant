@@ -1,6 +1,15 @@
 #contact_container {
   width: 100%;
   background-image: url("../src/img/Header/contact.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-position-y: -275px;
 }
 
 #contact_container form {
@@ -24,6 +33,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-top: 40px;
 }
 
 #contact_container form .all_input_container .right_input_container {
@@ -41,14 +51,128 @@
 #contact_container form .all_input_container .input_containers {
   color: white;
   width: 470px;
-  height: 80px;
+  height: 70px;
   background-color: rgba(38, 166, 154, .45);
   margin: 13px;
   padding: 20px;
   border-radius: 4px;
 }
 
+#contact_container form .all_input_container .input_containers .input_text {
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
 
+#contact_container form .all_input_container .input_containers input {
+  width: calc(100% - 20px);
+  height: 50px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  padding: 0 10px;
+  font-size: 20px;
+  -webkit-transition: .4s background-color;
+  transition: .4s background-color;
+}
+
+#contact_container form .all_input_container .input_containers input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, .85);
+}
+
+#contact_container form .all_input_container .input_containers input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, .85);
+}
+
+#contact_container form .all_input_container .input_containers input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, .85);
+}
+
+#contact_container form .all_input_container .input_containers input::placeholder {
+  color: rgba(255, 255, 255, .85);
+}
+
+#contact_container form .all_input_container .input_containers input:not(:placeholder-shown) {
+  background-color: white;
+}
+
+#contact_container form .all_input_container .input_containers input:placeholder-shown {
+  background-color: rgba(255, 255, 255, .26);
+  color: white;
+}
+
+#contact_container form .all_input_container .input_containers input:focus {
+  border-bottom: 3px solid #007d82;
+  background-color: white !important;
+}
+
+#contact_container form button {
+  height: 40px;
+  width: 221px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(225deg, #279076 0%, #2ECEC5 100%);
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin: 50px 0px;
+}
+
+#contact_container .input_containers_message {
+  color: white;
+  width: 470px;
+  height: 478px;
+  background-color: rgba(38, 166, 154, .45);
+  margin: 13px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#contact_container .input_containers_message .input_text {
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+#contact_container .input_containers_message textarea {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  padding: 0 10px;
+  font-size: 20px;
+  color: black;
+  -webkit-transition: .4s background-color;
+  transition: .4s background-color;
+}
+
+#contact_container .input_containers_message textarea:placeholder-shown {
+  background-color: rgba(255, 255, 255, .26);
+  color: white;
+}
+
+#contact_container .input_containers_message textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, .85);
+}
+
+#contact_container .input_containers_message textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, .85);
+}
+
+#contact_container .input_containers_message textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, .85);
+}
+
+#contact_container .input_containers_message textarea::placeholder {
+  color: rgba(255, 255, 255, .85);
+}
+
+#contact_container .input_containers_message textarea:not(:placeholder-shown) {
+  background-color: white;
+}
+
+#contact_container .input_containers_message textarea:focus {
+  border-bottom: 3px solid #007d82;
+  background-color: white !important;
+}
 #home_container {
   width: 100%;
 }
