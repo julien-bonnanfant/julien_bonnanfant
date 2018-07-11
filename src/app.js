@@ -1,11 +1,22 @@
 if(window.history.state )
-    gotopage(window.history.state)
+gotopage(window.history.state)
 else{
-    gotopage('home')
+    var currentlocation = window.location.href
+    var currentpath = currentlocation.replace(window.location.origin,"");
+    var currentfolder = currentpath.split("/")[1]
+
+
+    if (currentfolder == "#article")
+    gotopage(currentpath)
+    
+    else
+    gotopage('home');
 }
 
 
+
 function gotopage(page){
+    debugger;
     var xhr= new XMLHttpRequest();
     xhr.open('GET', './src/pages/'+page+'.html', true);
     xhr.onreadystatechange= function() {
@@ -15,7 +26,7 @@ function gotopage(page){
         window.history.pushState(page,'','#'+page)
         setActivemenu(page)
 
-            show_hide_scrolltop();
+        show_hide_scrolltop();
 
     };
     xhr.send();
@@ -23,8 +34,8 @@ function gotopage(page){
 
 function setActivemenu(page){
     for (i=0;i<5;i++){
-    document.getElementsByClassName("indicator")[i].classList.remove("active");
-}
+        document.getElementsByClassName("indicator")[i].classList.remove("active");
+    }
     document.getElementsByClassName(page)[0].classList.add("active");
 }
 
