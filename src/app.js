@@ -6,9 +6,9 @@ else{
     var currentfolder = currentpath.split("/")[1]
 
 
-    if (currentfolder == "#article")
-    gotopage(currentpath)
-    
+    if (currentfolder == "#articles")
+    gotopage(currentpath.split('#')[1])
+
     else
     gotopage('home');
 }
@@ -16,7 +16,7 @@ else{
 
 
 function gotopage(page){
-    debugger;
+
     var xhr= new XMLHttpRequest();
     xhr.open('GET', './src/pages/'+page+'.html', true);
     xhr.onreadystatechange= function() {
@@ -26,7 +26,7 @@ function gotopage(page){
         window.history.pushState(page,'','#'+page)
         setActivemenu(page)
 
-        show_hide_scrolltop();
+        // show_hide_scrolltop();
 
     };
     xhr.send();
@@ -54,3 +54,9 @@ function scrolltop(){
         if(scrollposition !=0) scrolltop()
     }, timetorefresh);
 }
+
+
+    window.addEventListener('popstate',function(){
+            var url = window.location.href;
+            gotopage(url.split('#')[1])
+    })
