@@ -3,8 +3,21 @@
     flex-direction: column;
     padding: 50px 250px 50px 250px;
     background-color: white;
+    font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
 
 }
 h1{
     text-align: center;
+
+}
+.image-container-full-width{
+
+    margin: 20px 0px;
+
+    & img{
+        width: 100%;
+    }
+
+
+
 }

@@ -12,6 +12,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
+/*
+        @media screen and (min-width: 935px) and (max-width: 1130px){
+            background-color: white;
+            flex-direction: column;
+        } */
 
 
         & .about_me{
@@ -29,7 +34,8 @@
             }
             & .aboutme_text_container{
                 padding: 10px;
-                flex-direction: column;
+
+                 flex-direction: column;
                 background-color: #219c90;
                 color: white;
                 width: 100%;
@@ -51,7 +57,8 @@
             color: white;
             border-radius: 4px;
             margin: 15px  20px;
-            padding: 20px;
+            padding: 35px;
+
         }
 
     }
