@@ -14,9 +14,11 @@
 
 <meta charset="utf-8">
 <title>Julien Bonnanfant</title>
+<meta id="view_port" name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 <meta name="description" content="Site web de julien bonnanfant, Etudiant en informatique" />
 <link rel="stylesheet" href="./dest/style.css">
 <script src="./src/menu.js" ></script>
+<script src="./src/particles.js" ></script>
 
 <link rel="shortcut icon" href="./src/img/favicon.ico">
 </head>
@@ -26,7 +28,9 @@
 
     <header class="header">
 
-        <img src="./src/img/Header/headerpret.png" alt="Image d'illustration de la page" class="header_image">
+        <img src="./src/img/Header/headerpret.png" alt="Image d'illustration de la page" class="header_image_desktop">
+        <img src="./src/img/Header/header-mobile.png" alt="Image d'illustration de la page" class="header_image_mobile">
+
 
         <h1 class="header_text">Julien Bonnanfant</h1>
 
@@ -46,6 +50,9 @@
         </div>
 
         <nav id="menu_bar" action="#">
+            <div class="button_menu">
+                <img src=./src/img/button_menu.svg alt="image d'illstration du bouton home" class="img_menu">
+            </div>
             <a onclick= "gotopage('home')">
                 <div class="button">
                     <img src=./src/img/menu/home.svg alt="image d'illstration du bouton home" class="img_menu">
@@ -71,13 +78,14 @@
                 <div class="indicator projets"></div>
             </a>
 
+
             <!-- <a onclick= "gotopage('competences')">
-                <div class="button">
-                    <img src=./src/img/menu/competence.svg alt="image d'illstration du bouton home" class="img_menu">
-                    <p>Competences</p>
-                </div>
-                <div class="indicator competences"></div>
-            </a> -->
+            <div class="button">
+            <img src=./src/img/menu/competence.svg alt="image d'illstration du bouton home" class="img_menu">
+            <p>Competences</p>
+        </div>
+        <div class="indicator competences"></div>
+    </a> -->
 
             <a onclick= "gotopage('contact')" >
                 <div class="button">
@@ -87,26 +95,27 @@
                 <div class="indicator contact"></div>
 
             </a>
+
         </nav>
 
 
-    </header>
+</header>
 
 
 
 
 
 
-    <div id="app-container">
+<div id="app-container">
 
-    </div>
+</div>
 
-    <div onclick="scrolltop()" class="hautdelapage">
-    </div>
+<div onclick="scrolltop()" class="hautdelapage">
+</div>
 
 
 
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf74133d4f231ab6298ca6acb/b63a169b1780fca1ac1962e56.js");</script>
-    <script src="./src/app.js" ></script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf74133d4f231ab6298ca6acb/b63a169b1780fca1ac1962e56.js");</script>
+<script src="./src/app.js" ></script>
 </body>
 </html>

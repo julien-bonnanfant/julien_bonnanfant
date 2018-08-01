@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1440px" height="52px" viewBox="0 0 1440 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Quelques articles</title>
+    <title>quelquesarticles</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD/-Home" transform="translate(0.000000, -1226.000000)">
-            <g id="Quelques-articles" transform="translate(0.000000, 1226.000000)">
-                <g id="organism/Trianglelogo-desktop">
-                    <rect id="BG" fill="#26A69A" fill-rule="evenodd" x="0" y="0" width="1440" height="52"></rect>
-                    <path d="M1110,0 C1110,0 1110,2.85 1110,8.55" id="Line" stroke="#F7F7F7" stroke-width="1" stroke-linecap="square"></path>
-                    <path d="M1110,43.5 L1110,51.5" id="Line" stroke="#F7F7F7" stroke-width="1" stroke-linecap="square"></path>
-                    <polygon id="Triangle" stroke="#F7F7F7" stroke-width="1" transform="translate(1110.000000, 22.500000) scale(1, -1) translate(-1110.000000, -22.500000) " points="1110 9 1140 36 1080 36"></polygon>
-                    <path d="M1129.86757,18 C1133.07058,18 1136.44805,18 1140,18 L1109.96795,44 L1080,18 L1089.87189,18" id="Path-2" stroke="#F7F7F7" stroke-width="1"></path>
-                    <path d="M330,0 C330,0 330,2.85 330,8.55" id="Line-Copy-2" stroke="#F7F7F7" stroke-width="1" stroke-linecap="square"></path>
-                    <path d="M330,43.5 L330,51.5" id="Line-Copy" stroke="#F7F7F7" stroke-width="1" stroke-linecap="square"></path>
-                    <polygon id="Triangle-Copy" stroke="#F7F7F7" stroke-width="1" transform="translate(330.000000, 22.500000) scale(1, -1) translate(-330.000000, -22.500000) " points="330 9 360 36 300 36"></polygon>
-                    <path d="M349.867572,18 C353.070576,18 356.448052,18 360,18 L329.96795,44 L300,18 L309.871886,18" id="Path-2-Copy" stroke="#F7F7F7" stroke-width="1"></path>
-                </g>
-                <text font-family="Roboto-Regular, Roboto" font-size="36" font-weight="normal" fill="#FFFFFF">
-                    <tspan x="563" y="38">Quelques articles</tspan>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="quelquesarticles">
+            <g id="organism/Trianglelogo-desktop">
+                <rect id="BG" fill="#26A69A" x="0" y="0" width="1440" height="52"></rect>
+                <path d="M1110,0 C1110,0 1110,2.85 1110,8.55" id="Line" stroke="#F7F7F7" stroke-linecap="square"></path>
+                <path d="M1110,43.5 L1110,51.5" id="Line" stroke="#F7F7F7" stroke-linecap="square"></path>
+                <polygon id="Triangle" stroke="#F7F7F7" transform="translate(1110.000000, 22.500000) scale(-1, 1) rotate(-180.000000) translate(-1110.000000, -22.500000) " points="1110 9 1140 36 1080 36"></polygon>
+                <path d="M1129.86757,18 C1133.07058,18 1136.44805,18 1140,18 L1109.96795,44 L1080,18 L1089.87189,18" id="Path-2" stroke="#F7F7F7"></path>
+                <path d="M330,0 C330,0 330,2.85 330,8.55" id="Line-Copy-2" stroke="#F7F7F7" stroke-linecap="square"></path>
+                <path d="M330,43.5 L330,51.5" id="Line-Copy" stroke="#F7F7F7" stroke-linecap="square"></path>
+                <polygon id="Triangle-Copy" stroke="#F7F7F7" transform="translate(330.000000, 22.500000) scale(-1, 1) rotate(-180.000000) translate(-330.000000, -22.500000) " points="330 9 360 36 300 36"></polygon>
+                <path d="M349.867572,18 C353.070576,18 356.448052,18 360,18 L329.96795,44 L300,18 L309.871886,18" id="Path-2-Copy" stroke="#F7F7F7"></path>
+            </g>
+            <g id="Group" transform="translate(487.000000, 0.000000)" fill="#FFFFFF" font-family="Roboto-Regular, Roboto" font-size="36" font-weight="normal">
+                <text id="Quelques-articles-et">
+                    <tspan x="0" y="38">Quelques articles </tspan>
+                    <tspan x="289.775391" y="38">et actions</tspan>
                 </text>
             </g>
         </g>

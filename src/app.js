@@ -11,6 +11,7 @@ else{
 
     else
     gotopage('home');
+
 }
 
 
@@ -30,6 +31,9 @@ function gotopage(page){
 
     };
     xhr.send();
+    particlesJS.load('particles-js', './src/particlesjs-config.json', function() {
+      console.log('particles.js loaded - callback');
+    });
 }
 
 function setActivemenu(page){
@@ -56,7 +60,7 @@ function scrolltop(){
 }
 
 
-    window.addEventListener('popstate',function(){
-            var url = window.location.href;
-            gotopage(url.split('#')[1])
-    })
+window.addEventListener('popstate',function(){
+    var url = window.location.href;
+    gotopage(url.split('#')[1])
+})
