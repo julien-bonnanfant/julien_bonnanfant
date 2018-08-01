@@ -1,0 +1,53 @@
+@media only screen and (max-width: 768px){
+    .about_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about_me{
+        align-self: center;
+    }
+
+    .photo_visage{
+        display: flex;
+        margin-top: 18px;
+    }
+    .parcour {
+        box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.63);
+        background-color: #219c90;
+        color: white;
+        border-radius: 4px;
+        margin: -21px 20px 10px 20px;
+        padding: 20px;
+
+
+        & br{
+            display: none
+        }
+    }
+    .experiences{
+        box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.63);
+        background-color: #219c90;
+        color: white;
+        border-radius: 4px;
+        margin: 0px 20px 10px 20px;
+        padding: 20px;
+        
+        & br{
+            display: none
+        }
+    }
+    .card{
+
+        margin: 20px;
+        cursor: pointer;
+        border-radius: 3px 3px 3px 3px;
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        background-color: #ECECEC;
+        &:hover{
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+
+        }
+
+    }
+
+}

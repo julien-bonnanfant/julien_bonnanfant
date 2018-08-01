@@ -1,0 +1,123 @@
+:root{
+    --font: "Montserrat", "Helvetica", "Arial", sans-serif;
+
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    html, body{
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    header {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+
+
+        & .share-buttons-container{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            bottom: 6px;
+            left: 6px;
+            z-index: 8;
+            & a{
+                border: 0;
+                background: none;
+                margin-right: 10px;
+                outline: none;
+                cursor: pointer;
+
+                &:hover{
+
+
+                }
+            }
+
+        }
+        & .header_image_mobile {
+            width: 100%;
+            z-index: 2;
+        }
+        & .header_image_desktop {
+            display: none;
+        }
+
+
+        & .header_text {
+            align-items: center;
+            text-align: center;
+            line-height: 5vw;
+            z-index: 5;
+            position: absolute;
+            padding-bottom: 49vw;
+            font-family: var(--font);
+            font-size: 6vw;
+            font-weight: 700;
+            color: #3E3E3E;
+
+        }
+
+    }
+
+    #menu_bar{
+
+        & .button{
+            display: none;
+        }
+        & .menu_button{
+            display: block;
+            z-index: 10;
+                position: absolute;
+                right: 21px;
+                top: 20px;
+                z-index: 10;
+                height: 20px;
+
+        }
+        & .button_menu{
+            & img{
+                height: 20px;
+            }
+            position: absolute;
+            right: 21px;
+            top: 20px;
+            z-index: 10;
+            height: 20px;
+        }
+
+
+
+    }
+
+    #menu_bar:hover{
+        height: 100%;
+        position: absolute;
+        z-index: 9;
+        width: 40%;
+        right: 0px;
+        background: #219c90;
+        & .button_menu{
+            display: none;
+        }
+        & .button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        & .img_menu{
+            height: 20px;
+            margin: 10px
+        }
+
+    }
+}
