@@ -222,6 +222,12 @@ h1 {
   position: fixed;
 }
 @media only screen and (min-width: 768px) {
+  #home_container #eye-left,
+  #home_container #eye-right {
+    -webkit-transition: 0.1s all;
+    transition: 0.1s all;
+  }
+
   #home_container {
     width: 100%;
   }
@@ -252,18 +258,14 @@ h1 {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 100%
-
-/* @media screen and (min-width: 935px) and (max-width: 1130px){
+    width: 100%;
+    /* @media screen and (min-width: 935px) and (max-width: 1130px){
             background-color: white;
-    flex-direction: column;
+            flex-direction: column;
+        } */
   }
 
-  */
-
-
-}
-#home_container .about_container .about_me {
+  #home_container .about_container .about_me {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
