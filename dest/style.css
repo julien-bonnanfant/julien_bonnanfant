@@ -222,11 +222,7 @@ h1 {
   position: fixed;
 }
 @media only screen and (min-width: 768px) {
-  #home_container #eye-left,
-  #home_container #eye-right {
-    -webkit-transition: 0.1s all;
-    transition: 0.1s all;
-  }
+
 
   #home_container {
     width: 100%;
@@ -262,7 +258,7 @@ h1 {
     /* @media screen and (min-width: 935px) and (max-width: 1130px){
             background-color: white;
             flex-direction: column;
-        } */
+            } */
   }
 
   #home_container .about_container .about_me {
@@ -276,6 +272,16 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  #home_container .about_container .about_me svg {
+    z-index: 1;
+  }
+
+  #home_container .about_container .about_me {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0px 20px;
     padding: 20px;
   }
@@ -292,18 +298,7 @@ h1 {
   }
 
   #home_container .about_container .about_me .aboutme_text_container {
-    padding: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #219c90;
-    color: white;
-    width: 100%;
-    height: 200px;
-    border-radius: 4px;
-    -webkit-box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, .63);
-    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, .63);
+    margin-top: -1px;
   }
 
   #home_container .about_container .parcour,
@@ -370,6 +365,14 @@ h1 {
   #home_container .projets-action,
   #home_container .quelquesarticles {
     background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #facebook {
+    z-index: 20;
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
   }
 }
 @media only screen and (max-width: 768px) {

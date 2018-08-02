@@ -83,7 +83,7 @@ onmousemove = function moveEyes(e){
     const maxEyeMoveY = 4;
 
 
-    var documentHeight = document.querySelector('body').clientHeight;
+    var documentHeight = window.innerHeight;
     var documentWidth = document.querySelector('body').clientWidth;
 
 
@@ -109,18 +109,25 @@ onmousemove = function moveEyes(e){
     var eyeRightMaxMouseMoveOnYPositive = documentHeight - position_righteye.y ;
     var eyeRightMaxMouseMoveOnYNegative = position_righteye.y ;
 
-    var eyeRightMaxMouseMoveOnXPositive = documentWidth -  position_righteye.x;
+    var eyeRightMaxMouseMoveOnXPositive = documentWidth - position_righteye.x;
     var eyeRightMaxMouseMoveOnXNegative = position_righteye.x;
 
 
-console.log('eyeRightMaxMouseMoveOnYPositive',eyeRightMaxMouseMoveOnYPositive);
-console.log('eyeRightMaxMouseMoveOnYNegative',eyeRightMaxMouseMoveOnYNegative);
 
-    // On regarde si la sourie est entre les deux yeux
-    // if(position_lefteye.x < e.clientX &&  e.clientX <  position_righteye.x ){
-    //     var eyeLeftMaxMouseMoveOnXPositive = (position_righteye.x - position_lefteye.x) /1.5  ;
-    //     var eyeRightMaxMouseMoveOnXNegative = (position_righteye.x - position_lefteye.x) /1.5  ;
-    // }
+
+     //On regarde si la sourie est entre les deux yeux
+    if(position_lefteye.x < e.clientX &&  e.clientX <  position_righteye.x   &&  Math.abs(eyeleft_y_diff) < 80){
+        left_eye.style.transition = "0.1s all";
+        right_eye.style.transition = "0.1s all";
+        var eyeLeftMaxMouseMoveOnXPositive = (position_righteye.x - position_lefteye.x) /1.5  ;
+        var eyeRightMaxMouseMoveOnXNegative = (position_righteye.x - position_lefteye.x) /1.5  ;
+    }
+    else{
+        setTimeout(function () {
+            left_eye.style.transition = "0s all";
+            right_eye.style.transition = "0s all";
+        },200)
+    }
 
 
 
@@ -133,8 +140,8 @@ console.log('eyeRightMaxMouseMoveOnYNegative',eyeRightMaxMouseMoveOnYNegative);
     if( eyeleft_x_diff > 0) translate_eyeleft_X = (maxEyeMoveX * eyeleft_x_diff) / eyeLeftMaxMouseMoveOnXNegative ;
     else                    translate_eyeleft_X = (maxEyeMoveX * eyeleft_x_diff) / eyeLeftMaxMouseMoveOnXPositive ;
 
-    if( eyeleft_y_diff > 0) translate_eyeleft_Y = (maxEyeMoveY * eyeleft_y_diff) / eyeLeftMaxMouseMoveOnYPositive ;
-    else                    translate_eyeleft_Y = (maxEyeMoveY * eyeleft_y_diff) / eyeLeftMaxMouseMoveOnYNegative ;
+    if( eyeleft_y_diff > 0) translate_eyeleft_Y = (maxEyeMoveY * eyeleft_y_diff) / eyeLeftMaxMouseMoveOnYNegative ;
+    else                    translate_eyeleft_Y = ( maxEyeMoveY * eyeright_y_diff ) /  eyeLeftMaxMouseMoveOnYPositive;
 
 
 
@@ -145,9 +152,8 @@ console.log('eyeRightMaxMouseMoveOnYNegative',eyeRightMaxMouseMoveOnYNegative);
     if( eyeright_x_diff > 0) translate_eyeright_X = (maxEyeMoveX * eyeright_x_diff) / eyeRightMaxMouseMoveOnXNegative ;
     else                    translate_eyeright_X = (maxEyeMoveX * eyeright_x_diff) / eyeRightMaxMouseMoveOnXPositive ;
 
-    if( eyeright_y_diff > 0) translate_eyeright_Y = (maxEyeMoveY * eyeright_y_diff) / eyeRightMaxMouseMoveOnYPositive ;
-    else                    translate_eyeright_Y = (maxEyeMoveY * eyeright_y_diff) / eyeRightMaxMouseMoveOnYNegative ;
-
+    if( eyeright_y_diff > 0) translate_eyeright_Y = -((maxEyeMoveY * eyeright_y_diff ) / eyeRightMaxMouseMoveOnYNegative) ;
+    else                    translate_eyeright_Y = -(maxEyeMoveY *eyeright_y_diff ) / eyeRightMaxMouseMoveOnYPositive ;
 
 
 
@@ -155,15 +161,10 @@ console.log('eyeRightMaxMouseMoveOnYNegative',eyeRightMaxMouseMoveOnYNegative);
 
 
     left_eye.style.transform = "translate("+ -translate_eyeleft_X +"px,"+ -translate_eyeleft_Y +"px)";
-    right_eye.style.transform = "translate("+ -translate_eyeright_X +"px,"+ -translate_eyeright_Y +"px)";
+    right_eye.style.transform = "translate("+ -translate_eyeright_X +"px,"+ translate_eyeright_Y +"px)";
 
 
 
-
-
-
-    // var translate_X = Math.random() * maxEyeMoveX;
-    // var translate_Y = Math.random() * maxEyeMoveY;
 
 
 }
