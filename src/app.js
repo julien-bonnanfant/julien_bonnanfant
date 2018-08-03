@@ -14,7 +14,14 @@ else{
 
 }
 
-
+function openmenu(){
+        var menuBar = document.querySelector('#menu_bar');
+        menuBar.classList.add('open');
+}
+function closemenu(){
+    var menuBar = document.querySelector('#menu_bar');
+    menuBar.classList.remove('open');
+}
 
 function gotopage(page){
 
@@ -31,17 +38,20 @@ function gotopage(page){
 
     };
     xhr.send();
-    particlesJS.load('particles-js', './src/particlesjs-config.json', function() {
-      console.log('particles.js loaded - callback');
-    });
+    if( page == 'contact')
+        particlesJS.load('particles-js', './src/particlesjs-config.json', function() {
+          console.log('particles.js loaded - callback');
+        });
 }
 
 function setActivemenu(page){
-    for (i=0;i<5;i++){
+    for (i=0;i<4;i++){
         document.getElementsByClassName("indicator")[i].classList.remove("active");
     }
     document.getElementsByClassName(page)[0].classList.add("active");
 }
+
+
 
 
 

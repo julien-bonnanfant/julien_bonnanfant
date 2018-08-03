@@ -1,0 +1,37 @@
+@media only screen and (max-width: 768px){
+    #contact_container{
+
+
+
+
+        & form{
+
+            & p.input_text {
+                margin-top: 0;
+            }
+
+
+            & .all_input_container{
+                justify-content: center;
+
+
+                & .right_input_container, & .left_input_container{
+                    display: flex;
+                    align-items: center;
+                    width: 100% !important;
+                    justify-content: center;
+                }
+
+
+                & .input_containers, & .input_containers_message{
+                    width: 80% !important;
+                }
+                & .input_containers_message{
+                    height: unset;
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}

@@ -1,3 +1,8 @@
+@media only screen and (max-width: 768px) {
+  .simple-article_container {
+    padding: 20px  !important;
+  }
+}
 .simple-article_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +42,41 @@ h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+  #contact_container form p.input_text {
+    margin-top: 0;
+  }
+
+  #contact_container form .all_input_container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  #contact_container form .all_input_container .right_input_container,
+  #contact_container form .all_input_container .left_input_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100% !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  #contact_container form .all_input_container .input_containers,
+  #contact_container form .all_input_container .input_containers_message {
+    width: 80% !important;
+  }
+
+  #contact_container form .all_input_container .input_containers_message {
+    height: unset;
+    margin: 0;
+  }
 }
 #contact_container {
   width: 100%;
@@ -387,8 +427,24 @@ h1 {
   }
 
   .about_me {
-    -ms-flex-item-align: center;
-    align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .about_me svg {
+    z-index: 1;
+  }
+
+  .about_me .aboutme_text_container {
+    margin-top: -1px;
   }
 
   .photo_visage {
@@ -404,7 +460,7 @@ h1 {
     background-color: #219c90;
     color: white;
     border-radius: 4px;
-    margin: -21px 20px 10px 20px;
+    margin: 20px 20px 10px 20px;
     padding: 20px;
   }
 
@@ -424,20 +480,6 @@ h1 {
 
   .experiences br {
     display: none;
-  }
-
-  .card {
-    margin: 20px;
-    cursor: pointer;
-    border-radius: 3px 3px 3px 3px;
-    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
-    background-color: #ECECEC;
-  }
-
-  .card:hover {
-    -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
-    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -621,76 +663,7 @@ h1 {
   }
 
   #app-container .card {
-    height: 400px;
-    width: 300px;
-    margin: 20px;
-    cursor: pointer;
-    border-radius: 3px 3px 3px 3px;
-    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
-    background-color: #ECECEC;
-  }
-
-  #app-container .card:hover {
-    -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
-    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
-  }
-
-  #app-container .card .header {
-    padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  #app-container .card .header .title {
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.3em;
-    max-height: 25px;
-    width: -webkit-stretch;
-    text-align: justify;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 4px;
-  }
-
-  #app-container .card .header .subtitle {
-    margin-bottom: 8px;
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    font-size: 0.9em;
-    max-height: 25px;
-    width: -webkit-stretch;
-    color: rgba(0, 0, 0, .54);
-    text-decoration: none;
-    text-align: justify;
-  }
-
-  #app-container .card img {
-    width: 100%;
-    height: 150px;
-  }
-
-  #app-container .card .short_text {
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 1em;
-    padding: 10px;
+    max-width: 300px;
   }
 
   .trianglelogo {
@@ -780,6 +753,16 @@ h1 {
     color: #3E3E3E;
   }
 
+  #menu_bar #menu-open-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
   #menu_bar .button {
     display: none;
   }
@@ -806,7 +789,8 @@ h1 {
     height: 20px;
   }
 
-  #menu_bar:hover {
+  #menu_bar.open {
+    color: white;
     height: 100%;
     position: absolute;
     z-index: 9;
@@ -815,11 +799,15 @@ h1 {
     background: #219c90;
   }
 
-  #menu_bar:hover .button_menu {
+  #menu_bar.open #menu-open-overlay {
+    display: block;
+  }
+
+  #menu_bar.open .button_menu {
     display: none;
   }
 
-  #menu_bar:hover .button {
+  #menu_bar.open .button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -832,8 +820,96 @@ h1 {
     align-items: center;
   }
 
-  #menu_bar:hover .img_menu {
+  #menu_bar.open .img_menu {
     height: 20px;
     margin: 10px;
   }
+
+  .cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+#app-container .card {
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+  background-color: #ECECEC;
+}
+
+#app-container .card:hover {
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
+}
+
+#app-container .card:visited {
+  color: black;
+  text-decoration: none !important;
+}
+
+#app-container .card .header {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#app-container .card .header .title {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3em;
+  max-height: 25px;
+  width: -webkit-stretch;
+  text-align: justify;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+#app-container .card .header .subtitle {
+  margin-bottom: 8px;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 0.9em;
+  max-height: 25px;
+  width: -webkit-stretch;
+  color: rgba(0, 0, 0, .54);
+  text-decoration: none;
+  text-align: justify;
+}
+
+#app-container .card img {
+  width: 100%;
+  height: 150px;
+}
+
+#app-container .card .short_text {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 1em;
+  padding: 10px;
 }

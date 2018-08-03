@@ -23,7 +23,7 @@
 <link rel="shortcut icon" href="./src/img/favicon.ico">
 </head>
 
-<body onscroll="setMenuPosition()">
+<body onscroll="setMenuPosition()" >
 
 
     <header class="header">
@@ -50,9 +50,10 @@
         </div>
 
         <nav id="menu_bar" action="#">
-            <div class="button_menu">
-                <img src=./src/img/button_menu.svg alt="image d'illstration du bouton home" class="img_menu">
-            </div>
+            <div id="menu-open-overlay" onclick="closemenu()"></div>
+            <a class="button_menu"  onclick="openmenu()">
+                <img  src=./src/img/button_menu.svg alt="image d'illstration du bouton home" class="img_menu">
+            </a>
             <a onclick= "gotopage('home')">
                 <div class="button">
                     <img src=./src/img/menu/home.svg alt="image d'illstration du bouton home" class="img_menu">
@@ -62,7 +63,7 @@
 
             </a>
 
-            <a onclick= "gotopage('articles')">
+            <a onclick="gotopage('articles')">
                 <div class="button">
                     <img src=./src/img/menu/article.svg alt="image d'illstration du bouton home" class="img_menu">
                     <p>Articles</p>
@@ -116,6 +117,6 @@
 
 
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf74133d4f231ab6298ca6acb/b63a169b1780fca1ac1962e56.js");</script>
-<script src="./src/app.js" ></script>
+<script src="./src/app.js?version=1" ></script>
 </body>
 </html>
