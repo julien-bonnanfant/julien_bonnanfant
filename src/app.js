@@ -24,6 +24,7 @@ function closemenu(){
 }
 
 function gotopage(page){
+    closemenu();
 
     var xhr= new XMLHttpRequest();
     xhr.open('GET', './src/pages/'+page+'.html', true);
