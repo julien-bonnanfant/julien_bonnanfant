@@ -1,5 +1,6 @@
 :root{
     --font: "Montserrat", "Helvetica", "Arial", sans-serif;
+    --color: #092E37;
 
 }
 @media only screen and (min-width: 768px){
@@ -85,7 +86,7 @@
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
-        background-color: #23b2a4;
+        background-color: var(--color);
         color: white;
         box-shadow: inset 0px 12px 20px -10px rgba(0, 0, 0, 0.75);
 

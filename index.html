@@ -119,5 +119,25 @@
 
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf74133d4f231ab6298ca6acb/b63a169b1780fca1ac1962e56.js");</script>
 <script src="./src/app.js?version=1" ></script>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="174622263218556"
+  theme_color="#23b2a4"
+  logged_in_greeting="Bonjour, avez-vous besoin d'informations ?"
+  logged_out_greeting="Bonjour, avez-vous besoin d'informations ?">
+</div>
+
+
 </body>
 </html>
