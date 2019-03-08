@@ -1,6 +1,6 @@
 :root{
     --font: "Montserrat", "Helvetica", "Arial", sans-serif;
-    --color: #092E37;
+    --color: #219c90;
 
 }
 @media only screen and (min-width: 768px){
@@ -141,7 +141,7 @@
         justify-content: center;
         align-items: center;
 
-        background-color: #dbe4e3;
+        background-color: #565656;
         & a{
             cursor: pointer;
         }

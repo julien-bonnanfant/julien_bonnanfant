@@ -1,7 +1,11 @@
 :root{
     --font: "Montserrat", "Helvetica", "Arial", sans-serif;
 }
+
+
 #app-container{
+
+    
     & .card{
         margin: 20px;
         cursor: pointer;

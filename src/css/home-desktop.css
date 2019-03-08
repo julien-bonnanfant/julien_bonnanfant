@@ -1,15 +1,12 @@
 
-
-
-
 @media only screen and (min-width: 768px) {
     #home_container{
 
-        & #eye-left, & #eye-right{
-
-        }
+      
 
         width: 100%;
+
+
         & section{
             display: flex;
             flex-direction: row;
@@ -64,10 +61,8 @@
                 border-radius: 4px;
                 margin: 15px  20px;
                 padding: 35px;
-
-            }
-
-        }
+              }
+                                     }
         & .articles_container{
             width: 100%;
             display: flex;

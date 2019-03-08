@@ -7,7 +7,7 @@ var fancyLog = require('fancy-log');
 var colors = require('ansi-colors');
 
 
-gulp.task("css", function() {
+gulp.task("css", function () {
     return gulp
         .src("./src/css/*.css")
         .pipe(
