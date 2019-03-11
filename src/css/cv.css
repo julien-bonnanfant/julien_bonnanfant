@@ -1,15 +1,12 @@
-
-<style media="screen">
-
-  ul li {
-    padding-top: .5em;
-  }
+#cv_container {
+  width: 950px;
+  margin: 0 auto;
+}
 
   header h1 {
     color : white;
     margin : 30px;
   }
-
   h2 {
     border: 2px solid white;
     color: white;
@@ -31,17 +28,10 @@
     border: 1px solid white;
   }
 
-  header {
-    overflow: hidden;
-  }
   .wrap {
     padding: 2em;
   }
 
-  section {
-    width: 950px;
-    margin: 0 auto;
-  }
   .diplome li {
     width: 20%;
     float: left;
@@ -52,48 +42,31 @@
   .diplome p {
     margin-top:10px;
   }
-
-
-
-  .full-qual {
+    .full-qual {
     width: 100%;
     margin: 0 auto;
-  }
-
-  .third-qual {
+    }
+    .third-qual {
     width: 70%;
     float: left;
     margin-right: 5%;
-  }
-
-  .quarter-qual {
+    }
+    .quarter-qual {
     width: 25%;
     float: left;
-  }
-
-  .qual {
+    }
+    .qual {
     margin-bottom: 40px;
   }
   .qual hr {
     margin: 0 auto;
     width: 100%;
   }
-
-  .experiences {
+  .experience {
     height: 225px;
     position: relative;
     width: 100%;
     margin-bottom: 10px;
-  }
-  .data .data-item {
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: 0;
-  }
-
-  .data-item h5{
-    margin-top:10px;
   }
   #item1 {
     color : #cccccc;
@@ -109,25 +82,25 @@
     right: 50px;
     border-left: 144px solid transparent;
     border-right: 428px solid transparent;
-
     border-bottom: 0px solid #b4dad7;
   }
   #item3 {
     color : #cccccc;
     z-index: 5;
     left: 60px;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
+    border-left: 394px solid transparent;
+    border-right: 215px solid transparent;
     border-bottom: 0px solid #2196a7;
   }
   #item4 {
-    color : #ffffff;
+    margin-top: -192px;
+    color: #ffffff;
     z-index: 5;
     left: 150px;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
     border-bottom: 0px solid #b4dad7;
-  }
+    border-left: 569px solid transparent;
+    border-right: 75px solid transparent;
+}
   #item5 {
     z-index: 5;
     left: 300px;
@@ -136,12 +109,10 @@
     opacity: .5;
     border-bottom: 0px solid #b4dad7;
   }
-
-
   .years {
     text-align: justify;
   }
-  .years .middot {
+  .years .date_point {
     margin: 0 auto;
     font-size: 58px;
     color: #4b5859;
@@ -162,27 +133,22 @@
     height: 0;
   }
 
-  .edu .highschool {
-    color: #4b5859;
-    margin-left: 1em;
-  }
-  .edu .schools {
+  .schools {
     position: relative;
     height: 100px;
     margin-bottom: .5em;
   }
-  .edu .schools .school-item h5 {
+  .schools .school-item h5 {
     position: absolute;
     bottom: 10px;
     white-space: nowrap;
     border-bottom: 2px solid #b4dad7;
   }
-  .edu .schools .school-item span {
+  .schools .school-item span {
     position: absolute;
     bottom: 13px;
     border-left: 2px solid #b4dad7;
   }
-
   #school1 {
     position: absolute;
     z-index: 1;
@@ -194,7 +160,6 @@
     border-right: 125px solid transparent;
     border-bottom: 62.5px solid #2196a7;
   }
-
   #school2 {
     position: absolute;
     z-index: 1;
@@ -206,25 +171,9 @@
     border-right: 175px solid transparent;
     border-bottom: 87.5px solid #b4dad7;
   }
-
-  .hna {
-    position: relative;
-  }
-  .hna ul {
-    list-style-position: inside;
-    padding: 0;
-    color: #4b5859;
-  }
-  .hna ul ul {
-    padding-left: 1em;
-  }
-
   .sknex {
     clear: both;
     margin-bottom: 2em;
-  }
-
-  .sknex {
     overflow: hidden;
   }
   .sknex .skills-text {
@@ -233,152 +182,29 @@
     margin-right: 2%;
     color: #4b5859;
   }
-
   .skills-vis {
     float: left;
     width: 70%;
   }
-
   #skill1 {
     width: 45%;
     margin-right: 5%;
     float: left;
   }
-  #skill1 #puters .pie {
-    background-color: #b4dad7;
-    -webkit-transform: rotate(80deg);
-    -moz-transform: rotate(80deg);
-    -o-transform: rotate(80deg);
-    transform: rotate(80deg);
-  }
-  #skill1 #puters4 {
-    background-color: #215961;
-    -webkit-transform: rotate(210deg);
-    -moz-transform: rotate(210deg);
-    -o-transform: rotate(210deg);
-    transform: rotate(210deg);
-  }
-  #skill1 #movies {
-    background-color: #307982;
-    -webkit-transform: rotate(170deg);
-    -moz-transform: rotate(170deg);
-    -o-transform: rotate(170deg);
-    transform: rotate(170deg);
-  }
-  #skill1 #games {
-    background-color: #2196a7;
-    -webkit-transform: rotate(160deg);
-    -moz-transform: rotate(160deg);
-    -o-transform: rotate(160deg);
-    transform: rotate(160deg);
-  }
-  #skill1 #music {
-    background-color: #519ca4;
-    -webkit-transform: rotate(110deg);
-    -moz-transform: rotate(110deg);
-    -o-transform: rotate(110deg);
-    transform: rotate(110deg);
-  }
-  #skill1 #music2 {
-    background-color: #519ca4;
-    -webkit-transform: rotate(80deg);
-    -moz-transform: rotate(80deg);
-    -o-transform: rotate(80deg);
-    transform: rotate(80deg);
-  }
-
   #skill2 {
     width: 45%;
     float: left;
   }
-  #skill2 #puters .pie {
-    background-color: #b4dad7;
-    -webkit-transform: rotate(80deg);
-    -moz-transform: rotate(80deg);
-    -o-transform: rotate(80deg);
-    transform: rotate(80deg);
-  }
-  #skill2 #puters4 {
-    background-color: #215961;
-    -webkit-transform: rotate(210deg);
-    -moz-transform: rotate(210deg);
-    -o-transform: rotate(210deg);
-    transform: rotate(210deg);
-  }
-  #skill2 #movies {
-    background-color: #307982;
-    -webkit-transform: rotate(170deg);
-    -moz-transform: rotate(170deg);
-    -o-transform: rotate(170deg);
-    transform: rotate(170deg);
-  }
-  #skill2 #games {
-    background-color: #2196a7;
-    -webkit-transform: rotate(160deg);
-    -moz-transform: rotate(160deg);
-    -o-transform: rotate(160deg);
-    transform: rotate(160deg);
-  }
-  #skill2 #music {
-    background-color: #519ca4;
-    -webkit-transform: rotate(110deg);
-    -moz-transform: rotate(110deg);
-    -o-transform: rotate(110deg);
-    transform: rotate(110deg);
-  }
-  #skill2 #music2 {
-    background-color: #519ca4;
-    -webkit-transform: rotate(80deg);
-    -moz-transform: rotate(80deg);
-    -o-transform: rotate(80deg);
-    transform: rotate(80deg);
-  }
 
 
-  .skill-breakdown {
-    overflow: hidden;
-  }
-  .skill-breakdown .circular_progress_container {
+ .circular_progress_container {
     position: relative;
     height: 150px;
     width: 150px;
     margin-right: 10px;
     float: left;
   }
-  .skill-breakdown .circular_progress_container .center {
-    position: absolute;
-    z-index: 50;
-    width: 75px;
-    height: 75px;
-    top: 25%;
-    left: 25%;
-    background-color: #565656;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-  }
 
-  .skill-breakdown .circular_progress_container .pie {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    clip: rect(0px, 75px, 150px, 0px);
-  }
-  .skill-breakdown .circular_progress_container .hold {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    clip: rect(0px, 150px, 75px, 75px);
-  }
   .skill-breakdown ul {
     margin-left: 180px;
   }
